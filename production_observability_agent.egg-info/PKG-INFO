@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: production-observability-agent
+Version: 1.0.0
+Summary: Production agent with observability: tracing spans, latency/cost dashboards, alerting on loops/failures, canary releases with auto-rollback
+Requires-Python: >=3.10
+Provides-Extra: demo
+Requires-Dist: langgraph>=0.2; extra == "demo"
+Requires-Dist: langsmith>=0.1; extra == "demo"
+Requires-Dist: openai>=1.40; extra == "demo"
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"

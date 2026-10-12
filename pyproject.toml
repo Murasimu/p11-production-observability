@@ -1,0 +1,13 @@
+[project]
+name = "production-observability-agent"
+version = "1.0.0"
+description = "Production agent with observability: tracing spans, latency/cost dashboards, alerting on loops/failures, canary releases with auto-rollback"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+demo = ["langgraph>=0.2", "langsmith>=0.1", "openai>=1.40"]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
